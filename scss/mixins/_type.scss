@@ -2,9 +2,9 @@
 
 // smallの設定を適用
 @mixin smallText() {
-  font-size: $smallFontSize;
-  line-height: $smallLineHeight;
-  letter-spacing: $smallLetterSpacing;
+  font-size: var(--wp--custom--font-size--small);;
+  line-height: var(--wp--custom--line-height--large);
+  letter-spacing:  0.04rem;
 }
 
 // blockquoteの設定を適用
@@ -22,12 +22,12 @@
 // リンクの設定を適用
 @mixin link() {
   &, &:active {
-    color: $linkColor;
-    text-decoration: $linkDecoration;
+    color: var(--wp--preset--color--medium-dark);
+    text-decoration: none;
   }
   
   &:hover, &:focus {
-    color: $linkHoverColor;
-    text-decoration: $linkHoverDecoration;
+    color: var(--wp--preset--color--primary);
+    text-decoration: underline dotted;
   }
 }
