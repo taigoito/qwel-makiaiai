@@ -1,0 +1,69 @@
+/**
+ * Utility - Flex
+ */
+
+$justify-content-values: (
+  left:    flex-start,
+  center:  center,
+  right:   flex-end,
+  around:  space-around,
+  between: space-between
+);
+
+$align-items-values: (
+  top:     flex-start,
+  stretch: stretch
+);
+
+$gap-values: (
+  none:    0,
+  x-small: var(--wp--custom--spacing--x-small),
+  small:   var(--wp--custom--spacing--small),
+  medium:  var(--wp--custom--spacing--medium),
+  large:   var(--wp--custom--spacing--large),
+  x-large: var(--wp--custom--spacing--x-large)
+);
+
+.--flex {
+  @each $key, $value in $justify-content-values {
+    &_#{$key} {
+      justify-content: $value !important;
+    }
+
+    &_md-#{$key} {
+      @media (min-width: breakpoint("md")) {
+        justify-content: $value !important;
+      }
+    }
+
+    &_lg-#{$key} {
+      @media (min-width: breakpoint("lg")) {
+        justify-content: $value !important;
+      }
+    }
+  }
+
+  @each $key, $value in $align-items-values {
+    &_#{$key} {
+      align-items: $value !important;
+    }
+
+    &_md-#{$key} {
+      @media (min-width: breakpoint("md")) {
+        align-items: $value !important;
+      }
+    }
+
+    &_lg-#{$key} {
+      @media (min-width: breakpoint("lg")) {
+        align-items: $value !important;
+      }
+    }
+  }
+
+  @each $key, $value in $gap-values {
+    &_gap-#{$key} {
+      gap: $value !important;
+    }
+  }
+}

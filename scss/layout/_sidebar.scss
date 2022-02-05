@@ -1,0 +1,13 @@
+/**
+ * Layout - Sidebar
+ */
+
+.sidebar {
+  &__inner {
+    @media (min-width: breakpoint("md")) {
+      width: 18rem;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}

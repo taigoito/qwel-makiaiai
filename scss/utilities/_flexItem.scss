@@ -1,0 +1,11 @@
+/**
+ * Utility - Flex Item
+ */
+
+.--flex-item {
+  @for $i from 1 through 12 {
+    &_#{$i} {
+      flex: #{$i} 1 #{containerWidth($i)};
+    }
+  }
+}

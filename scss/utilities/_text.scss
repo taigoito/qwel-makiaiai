@@ -1,0 +1,25 @@
+/**
+ * Utility - Text
+ */
+
+$text-align-props: left, center, right, justify;
+
+.--dark {
+  @each $value in $text-align-props {
+    &_#{$value} {
+      text-align: $value;
+    }
+
+    &_md-#{$value} {
+      @media (min-width: breakpoint("md")) {
+        text-align: $value;
+      }
+    }
+
+    &_lg-#{$value} {
+      @media (min-width: breakpoint("lg")) {
+        text-align: $value;
+      }
+    }
+  }
+}
