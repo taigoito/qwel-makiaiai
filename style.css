@@ -131,6 +131,44 @@ button, [type="button"], [type="reset"], [type="submit"] {
   cursor: default;
 }
 
+.wp-block-quote {
+  margin: 0 0 1.75em;
+  padding-left: 1em;
+  border-left: 0.5em solid var(--wp--preset--color--light);
+}
+
+.wp-block-quote p, .wp-block-quote cite {
+  font-style: italic;
+  font-size: var(--wp--custom--font-size--small);
+  line-height: var(--wp--custom--line-height--large);
+  letter-spacing: 0.04rem;
+}
+
+.wp-block-table {
+  width: 100%;
+}
+
+.wp-block-table thead {
+  border: 0;
+}
+
+.wp-block-table tr {
+  border-bottom: 1px solid var(--wp--preset--color--medium-light);
+}
+
+.wp-block-table tr:first-child {
+  border-top: 1px solid var(--wp--preset--color--medium-light);
+}
+
+.wp-block-table th, .wp-block-table td {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+  border: 0;
+  font-size: var(--wp--custom--font-size--small);
+  line-height: var(--wp--custom--line-height--large);
+  letter-spacing: 0.04rem;
+}
+
 /**
  * Layout
  */

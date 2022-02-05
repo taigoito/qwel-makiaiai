@@ -55,4 +55,12 @@
       }
     }
   }
+
+  &-quote {
+    @include blockquote();
+  }
+
+  &-table {
+    @include table();
+  }
 }
