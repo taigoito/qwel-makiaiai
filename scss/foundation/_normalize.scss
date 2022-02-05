@@ -2,7 +2,16 @@
  * Normalize.css v8.0 | MIT License | github.com/necolas/normalize.css
  */
 
- button, input, optgroup, select, textarea {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+
+button, input, optgroup, select, textarea {
   font-family: inherit; // Change the font styles in all browsers
   font-size: inherit;
   line-height: inherit;
