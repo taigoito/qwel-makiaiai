@@ -1,0 +1,17 @@
+/**
+ * Layout - G Nav
+ */
+
+.gNav {
+  &__primaryMenu {
+    @media (max-width: breakpoint("md") - 1) {
+      display: none !important;
+    }
+  }
+
+  &__socialMenu {
+    @media (max-width: breakpoint("md") - 1) {
+      display: none !important;
+    }
+  }
+}

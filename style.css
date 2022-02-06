@@ -179,6 +179,21 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 /**
+ * Layout - G Nav
+ */
+@media (max-width: 899px) {
+  .gNav__primaryMenu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .gNav__socialMenu {
+    display: none !important;
+  }
+}
+
+/**
  * Layout - Sidebar
  */
 @media (min-width: 900px) {
