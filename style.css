@@ -205,6 +205,13 @@ button, [type="button"], [type="reset"], [type="submit"] {
 }
 
 /**
+ * Layout - Footer
+ */
+.footer__inner {
+  text-align: center;
+}
+
+/**
  * Component - Breadcrumb
  */
 .breadcrumb__item:not(.--current)::after {
