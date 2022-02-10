@@ -11,6 +11,13 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 /**
  * Foundation
  */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @media (max-width: 599px) {
   :root {
     font-size: 3.84vw;
@@ -96,6 +103,10 @@ button, [type="button"], [type="reset"], [type="submit"] {
 
 .wp-block-post-excerpt__more-text {
   text-align: right;
+}
+
+.wp-block-image {
+  overflow: hidden;
 }
 
 .wp-block-query-pagination-numbers .page-numbers {

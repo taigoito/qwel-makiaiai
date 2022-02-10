@@ -38,6 +38,10 @@
     }
   }
 
+  &-image {
+    overflow: hidden;
+  }
+
   &-query-pagination {
     &-numbers {
       .page-numbers {
