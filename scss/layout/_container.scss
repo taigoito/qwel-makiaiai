@@ -15,10 +15,15 @@
 //
 // [Content]: flexitemクラスを付与し、コンテンツ幅を制御する
 
-.header, .gNav, .main, .breadcrumb, .titleArea, .postList, .postItem, .footer {
+%__container {
+  gap: 0 !important;
+  padding-left: var(--wp--custom--spacing--container-pad-wide);
+  padding-right: var(--wp--custom--spacing--container-pad-wide);
+}
+
+.header, .gNav, .main, .breadcrumb, .titleArea, .postList, .postItem, .footer,
+.about, .news, .access, .contact {
   &__container {
-    gap: 0 !important;
-    padding-left: var(--wp--custom--spacing--container-pad);
-    padding-right: var(--wp--custom--spacing--container-pad);
+    @extend %__container;
   }
 }

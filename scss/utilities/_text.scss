@@ -4,20 +4,32 @@
 
 $text-align-props: left, center, right, justify;
 
-.--dark {
+.--text {
   @each $value in $text-align-props {
     &_#{$value} {
       text-align: $value;
     }
+  }
 
-    &_md-#{$value} {
-      @media (min-width: breakpoint("md")) {
+  @media (min-width: breakpoint("sm")) {
+    @each $value in $text-align-props {
+      &_sm-#{$value} {
         text-align: $value;
       }
     }
+  }
 
-    &_lg-#{$value} {
-      @media (min-width: breakpoint("lg")) {
+  @media (min-width: breakpoint("md")) {
+    @each $value in $text-align-props {
+      &_md-#{$value} {
+        text-align: $value;
+      }
+    }
+  }
+
+  @media (min-width: breakpoint("lg")) {
+    @each $value in $text-align-props {
+      &_lg-#{$value} {
         text-align: $value;
       }
     }

@@ -5,9 +5,6 @@
 $rootFontSize:   16px;
 $fixedFontSize:  3.84vw; // 4vw以下推奨
 
-// 基準幅
-$containerBase:  24rem;
-
 // 各BP別用途
 // xs: 1カラム
 // 文字サイズを流動させ、レイアウトを固定
@@ -32,11 +29,11 @@ $breakpoints:    (
 );
 
 // BPの配列の接頭辞から値を返す関数
-@function breakpoint($infix: "lg") {
+@function breakpoint($infix: "md") {
   @return map-get($breakpoints, $infix);
 }
 
 // コンテナ幅の配列の接頭辞から値を返す関数
-@function containerWidth($size: 4, $grid: 12) {
-  @return $containerBase * $size / $grid * 3;
+@function containerWidth($size, $grid: 12) {
+  @return 54rem * $size / $grid;
 }

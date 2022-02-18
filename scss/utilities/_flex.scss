@@ -29,33 +29,51 @@ $gap-values: (
     &_#{$key} {
       justify-content: $value !important;
     }
-
-    &_md-#{$key} {
-      @media (min-width: breakpoint("md")) {
-        justify-content: $value !important;
-      }
-    }
-
-    &_lg-#{$key} {
-      @media (min-width: breakpoint("lg")) {
-        justify-content: $value !important;
-      }
-    }
   }
 
   @each $key, $value in $align-items-values {
     &_#{$key} {
       align-items: $value !important;
     }
+  }
 
-    &_md-#{$key} {
-      @media (min-width: breakpoint("md")) {
-        align-items: $value !important;
+  @media (min-width: breakpoint("sm")) {
+    @each $key, $value in $justify-content-values {
+      &_sm-#{$key} {
+        justify-content: $value !important;
       }
     }
 
-    &_lg-#{$key} {
-      @media (min-width: breakpoint("lg")) {
+    @each $key, $value in $align-items-values {
+      &_sm-#{$key} {
+        align-items: $value !important;
+      }
+    }
+  }
+
+  @media (min-width: breakpoint("md")) {
+    @each $key, $value in $justify-content-values {
+      &_md-#{$key} {
+        justify-content: $value !important;
+      }
+    }
+
+    @each $key, $value in $align-items-values {
+      &_md-#{$key} {
+        align-items: $value !important;
+      }
+    }
+  }
+
+  @media (min-width: breakpoint("lg")) {
+    @each $key, $value in $justify-content-values {
+      &_lg-#{$key} {
+        justify-content: $value !important;
+      }
+    }
+
+    @each $key, $value in $align-items-values {
+      &_lg-#{$key} {
         align-items: $value !important;
       }
     }
