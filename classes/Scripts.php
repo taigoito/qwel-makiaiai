@@ -8,6 +8,15 @@ trait Scripts {
 		$version = wp_get_theme()->get( 'Version' );
 		$version = is_string( $theme_version ) ? $theme_version : false;
 
+		// fonts
+		$family = 'M+PLUS+Rounded+1c:wght@400;700';
+		wp_enqueue_style(
+			'fonts',
+			'https://fonts.googleapis.com/css?family=' . $family . '&display=swap',
+			[],
+			null
+		);
+
 		// style.css
 		wp_enqueue_style(
 			'style',

@@ -1,0 +1,35 @@
+/**
+ * Project - About
+ */
+
+.about {
+  &__content {
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+
+  &__textBox {
+    flex: 1 0 24rem;
+  }
+
+  &__textContent {
+    width: 24rem;
+    height: 27rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    writing-mode: vertical-rl;
+    text-align: justify;
+    text-orientation: upright;
+  }
+
+  &__image {
+    flex: 1 0 24rem;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 30rem;
+      margin: auto;
+    }
+  }
+}
