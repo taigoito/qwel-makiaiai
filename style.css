@@ -203,6 +203,16 @@ button, [type="button"], [type="reset"], [type="submit"] {
   height: 6rem;
 }
 
+.header .gNav {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .header .gNav {
+    display: block;
+  }
+}
+
 /**
  * Layout - Sidebar
  */
@@ -349,12 +359,34 @@ button, [type="button"], [type="reset"], [type="submit"] {
 /**
  * Object - Icons
  */
+.icons {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: var(--wp--custom--spacing--medium);
+  }
+}
+
 .icons__contact, .icons__shopping {
   width: clamp(2.25rem, 6vw, 3.75rem);
 }
 
 .icons__contact img, .icons__shopping img {
   width: 100%;
+}
+
+.drawer {
+  top: 1rem !important;
 }
 
 /**
