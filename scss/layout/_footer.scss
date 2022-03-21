@@ -6,4 +6,17 @@
   &__inner {
     text-align: center;
   }
+
+  &__illust {
+    margin-bottom: 3rem;
+    
+    img {
+      width: 18rem;
+    }
+
+    figcaption {
+      caption-side: top !important;
+      letter-spacing: .5em;
+    }
+  }
 }

@@ -1,0 +1,17 @@
+/**
+ * Layout - Header
+ */
+
+.header {
+  &__container {
+    height: 6rem;
+  }
+
+  .gNav {
+    display: none;
+
+    @media (min-width: breakpoint("md")) {
+      display: block;
+    }
+  }
+}

@@ -22,7 +22,7 @@
 }
 
 .header, .gNav, .main, .breadcrumb, .titleArea, .postList, .postItem, .footer,
-.about, .news, .access, .contact {
+.intro, .topics, .firelog, .usage, .about, .access, .contact {
   &__container {
     @extend %__container;
   }

@@ -1,0 +1,63 @@
+/**
+ * Project - Firemap
+ */
+
+.firemap {
+  &__section {
+    text-align: center;
+
+    h2 {
+      display: inline-block;
+      border-bottom: 3px solid var(--wp--preset--color--dark);
+    }
+  }
+
+  &__subSection {
+    text-align: left;
+  }
+
+  &__sectionSubHeading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__sectionHeadingIcon {
+    width: 9rem;
+    padding: 0 1.5rem;
+  }
+
+  &__sectionHeadingLead {
+    padding: .375rem 0;
+    border-bottom: 3px dashed var(--wp--preset--color--dark);
+  }
+
+  &__sectionSubTitle {
+    padding: 3rem 2.25rem;
+    border: 3px solid var(--wp--preset--color--dark);
+    font-weight: 700;
+  }
+
+  &__sectionDataValues {
+    list-style-type: none;
+    padding-right: 3rem;
+  }
+
+  &__sectionDataItem {
+    display: inline-block;
+    width: 3rem;
+    font-weight: 700;
+  }
+
+  &__sectionDataItemValues {
+    color: var(--wp--preset--color--primary);
+  }
+
+  &__sectionDataSummary {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-weight: 700;
+  }
+
+  &__sectionContent {
+    margin: 3rem auto;
+  }
+}

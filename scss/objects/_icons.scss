@@ -1,0 +1,27 @@
+/**
+ * Object - Icons
+ */
+
+.icons {
+  display: none;
+
+  @media (min-width: breakpoint("md")) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--wp--custom--spacing--medium);
+
+  }
+
+  &__contact, &__shopping {
+    width: clamp(2.25rem, 6vw, 3.75rem);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.drawer {
+  top: 1rem !important;
+}

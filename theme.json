@@ -7,12 +7,12 @@
 				{
 					"slug": "dark",
 					"name": "Dark",
-					"color": "#333333"
+					"color": "#273653"
 				},
 				{
 					"slug": "medium-dark",
 					"name": "Medium Dark",
-					"color": "#666666"
+					"color": "#486398"
 				},
 				{
 					"slug": "medium-light",
@@ -22,27 +22,17 @@
 				{
 					"slug": "light",
 					"name": "Light",
-					"color": "#cccccc"
+					"color": "#d8d8d8"
 				},
 				{
 					"slug": "primary",
 					"name": "Primary",
-					"color": "#3399cc"
+					"color": "#ff661e"
 				},
 				{
 					"slug": "primary-light",
 					"name": "Primary Light",
-					"color": "#add6eb"
-				},
-				{
-					"slug": "secondary",
-					"name": "Secondary",
-					"color": "#cc334b"
-				},
-				{
-					"slug": "secondary-light",
-					"name": "Secondary Light",
-					"color": "#ebadb7"
+					"color": "#ffceb7"
 				}
 			]
 		},
@@ -61,12 +51,7 @@
 				{
 					"slug": "sans-serif",
 					"name": "Sans Serif",
-					"fontFamily": "\"Yu Gothic\", sans-serif"
-				},
-				{
-					"slug": "serif",
-					"name": "Serif",
-					"fontFamily": "\"Yu Mincho\", serif"
+					"fontFamily": "\"M PLUS Rounded 1c\", sans-serif"
 				},
 				{
 					"slug": "system-font",
@@ -131,6 +116,15 @@
 			"lineHeight": "var(--wp--custom--line-height--large)"
 		},
 		"blocks": {
+			"core/navigation": {
+				"typography": {
+					"fontWeight": "700",
+					"fontSize": "var(--wp--custom--font-size--medium)",
+					"textTransform": "uppercase",
+					"lineHeight": "var(--wp--custom--line-height--x-small)",
+					"letterSpacing": "0.1em"
+				}
+			},
 			"core/post-date": {
 				"typography": {
 					"fontSize": "var(--wp--custom--font-size--small)"
@@ -145,18 +139,22 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
-					"fontWeight": "400",
+					"fontFamily": "Arial, Helvetica, sans-serif",
+					"fontWeight": "700",
 					"fontSize": "var(--wp--custom--font-size--x-large)",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"textTransform": "uppercase",
+					"lineHeight": "var(--wp--custom--line-height--x-small)",
+					"letterSpacing": "0.1em"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--sans-serif)",
-					"fontWeight": "400",
-					"fontSize": "var(--wp--custom--font-size--large)",
-					"lineHeight": "var(--wp--custom--line-height--x-small)"
+					"fontWeight": "700",
+					"fontSize": "var(--wp--custom--font-size--medium)",
+					"textTransform": "uppercase",
+					"lineHeight": "var(--wp--custom--line-height--x-small)",
+					"letterSpacing": "0.1em"
 				}
 			},
 			"h3": {
@@ -211,16 +209,24 @@
 			"title": "G Nav"
 		},
 		{
-			"name": "section-hero",
-			"title": "Section Hero"
+			"name": "section-intro",
+			"title": "Section Intro"
+		},
+		{
+			"name": "section-topics",
+			"title": "Section Topics"
+		},
+		{
+			"name": "section-firelog",
+			"title": "Section Firelog"
+		},
+		{
+			"name": "section-firemap",
+			"title": "Section Firemap"
 		},
 		{
 			"name": "section-about",
 			"title": "Section About"
-		},
-		{
-			"name": "section-news",
-			"title": "Section News"
 		},
 		{
 			"name": "section-access",

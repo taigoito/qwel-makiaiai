@@ -22,8 +22,14 @@
     &-terms {
       padding-left: var(--wp--custom--spacing--x-small);
 
-      a::before {
-        content: "#";
+      a {
+        padding: .25rem 1rem;
+        background-color: var(--wp--preset--color--dark);
+        color: var(--wp--preset--color--white);
+      
+        &::before {
+          content: "#";
+        }
       }
 
       &__separator {

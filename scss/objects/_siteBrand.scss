@@ -1,0 +1,25 @@
+/**
+ * Object - Site Brand
+ */
+
+.siteBrand {
+  &__image {
+    width: clamp(9rem, 24vw, 18rem);
+  }
+
+  &__tagline {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+
+    @media (min-width: breakpoint("md")) {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
