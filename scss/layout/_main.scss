@@ -1,0 +1,26 @@
+/**
+ * Layout - Main
+ */
+
+.main {
+  &__container {
+    & > .postItem {
+      @include col(6, "md");
+      @include col(8, "lg");
+      padding: 1.25em 2.375em;
+    }
+
+    & > .sidebar {
+      @include col(3, "md");
+      padding: 0;
+
+      &__inner {
+        @media (min-width: breakpoint("md")) {
+          width: 18rem;
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

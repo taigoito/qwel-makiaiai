@@ -33,8 +33,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 @import "layout/container";
 @import "layout/header";
 @import "layout/siteBrand";
+@import "layout/main";
 @import "layout/footer";
-@import "layout/sidebar";
 
 // Components
 @import "objects/components/breadcrumb";
@@ -47,7 +47,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 @import "objects/projects/about";
 @import "objects/projects/firemap";
 @import "objects/projects/icons";
-//@import "objects/projects/postItem";
+@import "objects/projects/intro";
+@import "objects/projects/postItem";
 //@import "objects/projects/postList";
 
 // Utility

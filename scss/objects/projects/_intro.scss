@@ -1,0 +1,9 @@
+/**
+ * Project - Intro
+ */
+
+.intro {
+  &__image, &__content {
+    @include col(4, "md", true);
+  }
+}

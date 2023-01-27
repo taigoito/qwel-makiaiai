@@ -3,6 +3,22 @@
  */
 
 .firemap {
+  .usage__inner {
+    .wp-block-gallery {
+      .wp-block-image {
+        .wp-element-caption {
+          font-size: $h4FontSize;
+        }
+      }
+    }
+
+    .wp-block-buttons {
+      .wp-block-button {
+        width: 18rem;
+      }
+    }
+  }
+
   &__section {
     text-align: center;
 

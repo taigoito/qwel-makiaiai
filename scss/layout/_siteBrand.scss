@@ -4,7 +4,8 @@
 
 .siteBrand {
   &__image {
-    width: clamp(9rem, 24vw, 18rem);
+    width: clamp(13.5rem, 25vw, 18rem);
+    margin: 0;
   }
 
   &__tagline {

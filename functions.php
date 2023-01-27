@@ -33,8 +33,7 @@ spl_autoload_register(
  */
 class Qwel {
 	use	\Qwel_Theme\Supports,
-		\Qwel_Theme\Scripts,
-		\Qwel_Theme\Shortcodes;
+		\Qwel_Theme\Scripts;
 		
 	public function __construct() {
 		// テーマサポート機能
@@ -42,9 +41,6 @@ class Qwel {
 
 		// CSS, JSファイルを読み込み
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
-
-		// ショートコード登録
-		add_action( 'init', [ $this, 'register_shortcode' ] );
 	}
 }
 

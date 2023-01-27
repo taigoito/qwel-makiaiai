@@ -25,13 +25,13 @@ trait Scripts {
 		);
 
 		// init.js
-		wp_enqueue_script(
+		/*wp_enqueue_script(
 			'init',
 			get_template_directory_uri() . '/init.js',
 			[],
 			$version,
 			true
-		);
+		);*/
 
   }
 

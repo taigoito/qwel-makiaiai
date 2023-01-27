@@ -3,33 +3,11 @@
  */
 
 .postItem {
-  &__info {
-    @include row(flex-start);
-    margin-top: space(2);
-    margin-bottom: space(1);
-    font-size: $smallFontSize;
+  &__image {
+    @include col(3, "md", true);
   }
 
-  &__heading {
-    margin-top: space(2);
-    margin-bottom: space(1);
-    font-size: $h3FontSize;
-  }
-
-  &__excerpt {
-    margin-bottom: space(1);
-  }
-
-  &.--single {
-    .postItem {
-      &__image {
-        @include col(4, "md", true);
-      }
-
-      &__content {
-        @include col(5, "md", true);
-        margin-bottom: space(4);
-      }
-    }
+  &__content {
+    @include col(6, "md", true);
   }
 }
