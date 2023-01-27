@@ -1,7 +1,7 @@
 /*
-Theme Name: Qwel Two Beta
-Description: This is a theme for someone's portfolio or blog. You can customize and use.
-Version: 1.0
+Theme Name: Maki Ai Ai
+Description: This is a theme for Maki Ai Ai.
+Version: 1.1
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -12,37 +12,47 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 @charset "utf-8";
 
 // Settings
-@import "foundation/gridsystem";
+@import "foundation/settings/colorSystem";
+@import "foundation/settings/gridSystem";
+@import "foundation/settings/typography";
 
 // Mixins
-@import "mixins/button";
-@import "mixins/form";
-@import "mixins/table";
-@import "mixins/type";
+@import "foundation/mixins/background";
+@import "foundation/mixins/button";
+@import "foundation/mixins/form";
+@import "foundation/mixins/table";
+@import "foundation/mixins/type";
 
-// Foundation
-@import "foundation/root";
+// Normalize
 @import "foundation/normalize";
+
+// WP Blocks
 @import "foundation/wpBlocks";
 
 // Layout
 @import "layout/container";
 @import "layout/header";
-@import "layout/sidebar";
+@import "layout/siteBrand";
 @import "layout/footer";
+@import "layout/sidebar";
 
 // Components
-@import "objects/breadcrumb";
-@import "objects/embed";
-@import "objects/form";
+@import "objects/components/breadcrumb";
+@import "objects/components/button";
+@import "objects/components/embed";
+@import "objects/components/form";
+@import "objects/components/table";
 
 // Projects
-@import "objects/siteBrand";
-@import "objects/icons";
-@import "objects/about";
-@import "objects/firemap";
+@import "objects/projects/about";
+@import "objects/projects/firemap";
+@import "objects/projects/icons";
+//@import "objects/projects/postItem";
+//@import "objects/projects/postList";
 
 // Utility
-@import "utilities/flex";
-@import "utilities/flexItem";
-@import "utilities/text";
+@import "objects/utilities/flex";
+@import "objects/utilities/flexItem";
+@import "objects/utilities/spacing";
+@import "objects/utilities/text";
+@import "objects/utilities/visibility";

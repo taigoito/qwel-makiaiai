@@ -1,6 +1,25 @@
-/*
+/**
+ * Foundation
  * Normalize.css v8.0 | MIT License | github.com/necolas/normalize.css
  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: $rootFontSize;
+
+  @media (max-width: breakpoint("sm") - 0.1) {
+    font-size: $fixedFontSize;
+  }
+}
+
+a {
+  @include link();
+}
 
 table {
   border-collapse: collapse;

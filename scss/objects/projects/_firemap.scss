@@ -17,16 +17,16 @@
   }
 
   &__sectionSubHeading {
-    margin-bottom: 1.5rem;
+    margin-bottom: space(3);
   }
 
   &__sectionHeadingIcon {
     width: 9rem;
-    padding: 0 1.5rem;
+    padding: 0 space(3);
   }
 
   &__sectionHeadingLead {
-    padding: .375rem 0;
+    padding: space(1) 0;
     border-bottom: 3px dashed var(--wp--preset--color--dark);
   }
 
@@ -38,7 +38,7 @@
 
   &__sectionDataValues {
     list-style-type: none;
-    padding-right: 3rem;
+    padding-right: space(4);
   }
 
   &__sectionDataItem {
@@ -52,12 +52,12 @@
   }
 
   &__sectionDataSummary {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: space(2);
+    padding-bottom: space(2);
     font-weight: 700;
   }
 
   &__sectionContent {
-    margin: 3rem auto;
+    margin: space(4) auto;
   }
 }

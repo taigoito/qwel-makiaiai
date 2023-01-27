@@ -4,11 +4,12 @@
 
 .footer {
   &__inner {
+    padding: space(5);
     text-align: center;
   }
 
   &__illust {
-    margin-bottom: 3rem;
+    margin-bottom: space(4);
     
     img {
       width: 18rem;
@@ -16,7 +17,7 @@
 
     figcaption {
       caption-side: top !important;
-      letter-spacing: .5em;
+      letter-spacing: 0.5em;
     }
   }
 }

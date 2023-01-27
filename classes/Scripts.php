@@ -6,7 +6,6 @@ trait Scripts {
   public static function enqueue_scripts() {
     // バージョン情報を取得
 		$version = wp_get_theme()->get( 'Version' );
-		$version = is_string( $theme_version ) ? $theme_version : false;
 
 		// fonts
 		$family = 'M+PLUS+Rounded+1c:wght@400;700';
