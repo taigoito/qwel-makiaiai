@@ -4,9 +4,17 @@
 
 .wp-block {
   &-navigation {
-    &-item a {
-      @include link();
+    &-item {
+      margin: 0;
+      
+      a {
+        @include link();
+      }
     }
+  }
+
+  &-social-links {
+    margin: 0;
   }
 
   &-post {
@@ -24,6 +32,7 @@
 
       a {
         padding: .25rem 1rem;
+        border-radius: 0.375rem;
         background-color: themeColor("dark");
         color: themeColor("background");
       

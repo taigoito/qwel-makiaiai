@@ -58,8 +58,8 @@ $spacingValues:  (
 $gutter:         0.75rem;
 $containerPad:   (
   sm:              $gutter,
-  md:              clamp(#{$gutter}, 2%, 18px),
-  lg:              clamp(#{$gutter}, 2%, 24px)
+  md:              var(--wp--custom--spacing--container-pad, $gutter),
+  lg:              var(--wp--custom--spacing--container-pad-wide, $gutter)
 );
 
 // コンテナ生成

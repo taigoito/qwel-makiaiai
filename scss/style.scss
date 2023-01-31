@@ -1,7 +1,7 @@
 /*
 Theme Name: Maki Ai Ai
 Description: This is a theme for Maki Ai Ai.
-Version: 1.1
+Version: 1.2
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -49,7 +49,8 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 @import "objects/projects/icons";
 @import "objects/projects/intro";
 @import "objects/projects/postItem";
-//@import "objects/projects/postList";
+@import "objects/projects/postList";
+//@import "objects/projects/section";
 
 // Utility
 @import "objects/utilities/flex";

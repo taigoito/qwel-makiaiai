@@ -42,8 +42,7 @@
   padding-right: map-get($containerPad, "lg");
 }
 
-.header, .gNav, .main, .breadcrumb, .titleArea, .postList, .postItem, .footer,
-.intro, .topics, .firelog, .usage, .about, .access, .contact {
+.header, .main, .postList, .intro, .topics, .firelog, .usage, .about, .access, .contact {
   &__container {
     gap: 0 !important;
     padding-left: var(--wp--custom--spacing--container-pad-wide);

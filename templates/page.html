@@ -2,24 +2,24 @@
 
 <!-- wp:group {"tagName":"main","className":"main","layout":{"inherit":false}} -->
 <main id="main" class="wp-block-group main"><!-- wp:group {"tagName":"header","className":"main__header"} -->
-<header class="wp-block-group main__header"><!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"className":"breadcrumb","layout":{"inherit":true}} -->
+<header class="wp-block-group main__header"><!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"className":"breadcrumb","layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group breadcrumb" style="padding-top:2rem;padding-bottom:2rem"><!-- wp:group {"align":"wide","className":"breadcrumb__container","layout":{"type":"flex","allowOrientation":false}} -->
 <div class="wp-block-group alignwide breadcrumb__container"><!-- wp:site-title {"level":2,"className":"breadcrumb__item","fontSize":"small"} /-->
 
-<!-- wp:post-title {"level":3,"className":"breadcrumb__item --current","fontSize":"small"} /--></div>
+<!-- wp:post-title {"level":3,"className":"breadcrumb__item \u002d\u002dcurrent","fontSize":"small"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></header>
 <!-- /wp:group -->
 
-<!-- wp:group {"className":"main__body","layout":{"inherit":true}} -->
-<div class="wp-block-group main__body"><!-- wp:group {"align":"wide","className":"main__container"} -->
-<div class="wp-block-group alignwide main__container"><!-- wp:post-content /--></div>
+<!-- wp:group {"className":"main__body","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group main__body"><!-- wp:group {"align":"wide","className":"main__container","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide main__container"><!-- wp:post-content {"layout":{"type":"default"}} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"section-firelog"} /-->
 
-<!-- wp:template-part {"slug":"section-firemap"} /-->
+<!-- wp:template-part {"slug":"section-firemap","className":"firemap"} /-->
 
 <!-- wp:template-part {"slug":"footer"} /-->
