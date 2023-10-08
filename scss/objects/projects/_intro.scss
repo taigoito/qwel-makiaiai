@@ -4,6 +4,6 @@
 
 .intro {
   &__image, &__content {
-    @include col(4, "md", true);
+    @include col(4, true, "md");
   }
 }

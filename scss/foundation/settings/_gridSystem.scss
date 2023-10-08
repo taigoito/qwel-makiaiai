@@ -8,6 +8,9 @@ $fixedFontSize:  3.84vw; // 4vw以下推奨
 // 基準幅
 $gridBase:       6rem;
 
+// 画像アスペクト比 (高さ/幅)
+$imgAspectRatio: 3 / 4;
+
 // 各BP別用途
 // xs: 1カラム (4グリッド: 24rem)
 // 文字サイズを流動させ、レイアウトを固定
@@ -84,11 +87,15 @@ $containerPad:   (
 }
 
 // 列生成
-@mixin col($size: 12, $key: "xs", $flexGrow: false) {
+@mixin col($size: 12, $flexGrow: false, $key: "xs") {
   @extend %__containerSm;
 
   @if ($key == "xs") {
-    flex: 0 1 #{$size * $gridBase};
+    @if ($flexGrow == false) {
+      flex: 0 1 #{$size * $gridBase};
+    } @else {
+      flex: $size 1 #{$size * $gridBase};
+    }
   } @else {
     // 幅広レイアウト時の定義
     // "xs"～"sm"は未定義でも自動で1カラム一杯に広がる

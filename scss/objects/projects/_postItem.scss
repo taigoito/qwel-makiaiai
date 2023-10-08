@@ -5,10 +5,12 @@
 .postItem {
   &__image {
     img {
+      aspect-ratio: 1 / $imgAspectRatio;
+      object-fit: cover;
       border-radius: 1rem;
     }
   }
-  
+
   &__info {
     margin-top: space(2);
     margin-bottom: space(1);
@@ -28,11 +30,11 @@
   &.--single {
     .postItem {
       &__image {
-        @include col(4, "md", true);
+        @include col(4, true, "md");
       }
 
       &__content {
-        @include col(5, "md", true);
+        @include col(5, true, "md");
         margin-bottom: space(4);
       }
     }
